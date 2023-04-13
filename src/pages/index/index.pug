@@ -10,6 +10,8 @@ html(lang="en")
             header.header 
                 .header__container 
                     .header__body 
+                        .header__burger 
+                            span 
                         nav.header__menu 
                             ul.header__list 
                                 li 
@@ -23,9 +25,7 @@ html(lang="en")
                                 li 
                                     a.header__link(class='header__link-last' href='#') О компании 
                                 input.header__input(type='text' name='input' placeholder='Поиск по названию картины') 
-                                button.header__button(type='submit') Найти
-                        .header__burger 
-                            span 
+                                button.header__button(type='submit') Найти 
             main.main 
                 .main__first 
                     .first 
@@ -36,25 +36,39 @@ html(lang="en")
                                     .first__column 
                                         .first__content 
                                             .first__picture 
-                                            .first__subtitle 
-                                            .first__price 
-                                            button.first__button(type='submit') 
+                                                img(src=require('../../img/png/01.png') alt='01')
+                                            .first__subtitle «Рождение Венеры»
+                                            .first__subtitle(class='first__subtitle-one') Сандро Боттичелли 
+                                            .first__block
+                                                .first__prices 
+                                                    .first__price 2 000 000 $ 
+                                                    .first__price2 1 000 000 $
+                                                button.first__button(type='submit') Купить
                                     .first__column 
                                         .first__content 
                                             .first__picture 
-                                            .first__subtitle 
-                                            .first__price 
-                                            button.first__button(type='submit') 
+                                                img(src=require('../../img/png/02.png') alt='02')
+                                            .first__subtitle «Тайная вечеря»
+                                            .first__subtitle(class='first__subtitle-one') Леонардо да Винчи 
+                                            .first__block
+                                                .first__price2(class='first__price2-last') 3 000 000 $
+                                                button.first__button(type='submit') Купить
                                     .first__column 
                                         .first__content 
                                             .first__picture 
-                                            .first__subtitle 
-                                            .first__price 
-                                            button.first__button(type='submit') 
+                                                img(src=require('../../img/png/03.png') alt='03')
+                                            .first__subtitle «Сотворение Адама»
+                                            .first__subtitle(class='first__subtitle-one') Микеланджело 
+                                            .first__block
+                                                .first__prices 
+                                                    .first__price 6 000 000 $ 
+                                                    .first__price2 5 000 000 $ 
+                                                button.first__button(type='submit') Купить
                                     .first__column 
-                                        .first__content 
+                                        .first__content(class='first__content-opacity') 
                                             .first__picture 
-                                            .first__subtitle 
-                                            .first__price 
-                                            button.first__button(type='submit') 
+                                                img(src=require('../../img/png/04.png') alt='04')
+                                            .first__subtitle(class='first__subtitle-and') «Урок анатомии»
+                                            .first__subtitle(class='first__subtitle-last') Рембрандт 
+                                            .first__sale Продана на аукционе
 

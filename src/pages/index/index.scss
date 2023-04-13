@@ -5,7 +5,11 @@
 html,
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+// header styles start
 
 .header {
   position: fixed;
@@ -92,6 +96,9 @@ body {
 @media (max-width: 1100px) {
   .header__link-last {
     padding-right: 20px;
+  }
+  .first__column {
+    margin-bottom: 10px;
   }
 }
 
@@ -191,5 +198,112 @@ body {
   }
   .header::before {
     background-color: #a3bfd2;
+  }
+}
+
+// header styles finish
+
+// main styles start
+
+.first {
+  &__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  &__title {
+    margin-top: 141px;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #343030;
+    margin-bottom: 39px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+  }
+  &__column {
+    padding-left: 32px;
+  }
+  &__content {
+    border: 1px solid #e1e1e1;
+  }
+  &__content-opacity {
+    opacity: 0.5;
+  }
+  &__picture {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+  &__picture img {
+    max-width: 100%;
+  }
+  &__subtitle {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #343030;
+    padding-left: 24px;
+  }
+  &__subtitle-one {
+    margin-bottom: 22px;
+  }
+  &__subtitle-last {
+    margin-bottom: 34px;
+  }
+  &__block {
+    display: flex;
+  }
+  &__price {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    color: #a0a0a0;
+    padding-left: 24px;
+  }
+  &__price2 {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343030;
+    padding-left: 24px;
+    padding-bottom: 26px;
+  }
+  &__price2-last {
+    padding-top: 12px;
+    padding-bottom: 36px;
+  }
+  &__sale {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343030;
+    padding-left: 24px;
+    margin-bottom: 36px;
+  }
+  &__button {
+    height: 48px;
+    width: 118px;
+    background: #382e2b;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #f4f6f9;
+    margin-left: 21px;
   }
 }
