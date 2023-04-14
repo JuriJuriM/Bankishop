@@ -82,6 +82,9 @@ body {
     color: #ffffff;
     padding-left: 36px;
   }
+  &__button:hover {
+    background: #776763;
+  }
   &__burger {
     display: none;
   }
@@ -202,6 +205,15 @@ body {
     line-height: 150%;
     color: #f4f6f9;
     margin-left: 21px;
+  }
+  &__button:hover {
+    background: #776763;
+  }
+  &__subtitle.hide {
+    display: none;
+  }
+  &__content.hide {
+    display: none;
   }
 }
 
