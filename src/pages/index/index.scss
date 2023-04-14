@@ -23,11 +23,12 @@ body {
   z-index: 50;
   border: 1px solid #e1e1e1;
   &__container {
-    max-width: 1120px;
+    max-width: 1216px;
     margin: 0 auto;
     padding: 0 10px;
   }
   &__body {
+    padding-left: 85px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -36,12 +37,12 @@ body {
   }
   &__list {
     display: flex;
-    margin-left: -48px;
     position: relative;
     z-index: 2;
   }
   &__list li {
     margin-top: 14px;
+    padding-right: 48px;
   }
   &__link {
     font-family: "Merriweather";
@@ -50,10 +51,9 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #343030;
-    padding-left: 48px;
   }
   &__link-last {
-    padding-right: 162px;
+    padding-right: 178px;
   }
   &__input {
     height: 48px;
@@ -107,7 +107,7 @@ body {
 
 .first {
   &__container {
-    max-width: 1250px;
+    max-width: 1216px;
     margin: 0 auto;
     padding: 0 10px;
   }
@@ -124,10 +124,7 @@ body {
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -32px;
-  }
-  &__column {
-    padding-left: 32px;
+    justify-content: space-between;
   }
   &__content {
     border: 1px solid #e1e1e1;
@@ -265,10 +262,16 @@ body {
   }
 }
 
-@media (max-width: 1100px) {
-  .header__link-last {
-    padding-right: 20px;
+@media (max-width: 1240px) {
+  .header__body {
+    padding-left: 0;
   }
+  .header__link-last {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1100px) {
   .first__column {
     margin-bottom: 10px;
   }
@@ -280,12 +283,9 @@ body {
   }
 }
 
-@media (max-width: 930px) {
-  .header__list {
-    margin-left: 0;
-  }
-  .header__link {
-    padding-left: 10px;
+@media (max-width: 980px) {
+  .header__list li {
+    padding-right: 10px;
   }
 }
 
