@@ -21,16 +21,15 @@ const headerInput = document.querySelector('.header__input');
 headerInput.oninput = function () {
   const val = this.value.trim();
   const subtitleItems = document.querySelectorAll('.first__subtitle');
-  const contentPic = document.querySelectorAll('.first__content');
-  if (val != '') {
+  if (val !== '') {
     subtitleItems.forEach(function (elem) {
-      if (elem.innerText.search(val) == -1) {
+      if (elem.innerText.search(val) === -1) {
         elem.classList.add('hide');
         elem.innerHTML = elem.innerText;
       }
       else {
         elem.classList.remove('hide');
-        let str = elem.innerText;
+        const str = elem.innerText;
         elem.innerHTML = insertMark(str, elem.innerText.search(val), val.length);
       }
     });
