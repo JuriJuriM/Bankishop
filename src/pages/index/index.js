@@ -19,9 +19,9 @@ headerBurger.addEventListener('click', handleClick);
 const headerInput = document.querySelector('.header__input');
 
 headerInput.oninput = function () {
-  let val = this.value.trim();
-  let subtitleItems = document.querySelectorAll('.first__subtitle');
-  let contentPic = document.querySelectorAll('.first__content');
+  const val = this.value.trim();
+  const subtitleItems = document.querySelectorAll('.first__subtitle');
+  const contentPic = document.querySelectorAll('.first__content');
   if (val != '') {
     subtitleItems.forEach(function (elem) {
       if (elem.innerText.search(val) == -1) {
